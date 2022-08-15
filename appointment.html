@@ -41,7 +41,7 @@
   </head>
   <body>
     <header class="header">
-      <a href="#">
+      <a href="index.html">
         <img
           src="img/logo-white-01.png"
           alt="ELU-HABESHAWI-MAKEUP logo"
@@ -67,11 +67,68 @@
       </nav>
     </header>
     <main>
-      <section class="appointmemt">
+      <section class="appointment-section">
         <div class="container">
-          <h1 class="secondary-heading txt-center">
-            Make an Appointmemt
-          </h1>
+          <h1 class="secondary-heading txt-center">Make an Appointmemt</h1>
+        </div>
+        <div class="container-2">
+          <form action="#" class="contact-form">
+            <div>
+              <label for="full-name">Full Name</label>
+              <input
+                id="full-name"
+                type="text"
+                placeholder="John Smith"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email">Email address</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="me@example.com"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="service">Service</label>
+              <select id="service" name="service" required>
+                <option value="">Please choose a service you want:</option>
+                <option value="friends">Makeup</option>
+                <option value="youtube">Henna</option>
+                <option value="podcast">Wax</option>
+                <option value="ad">Eyebrow-Henna</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="full-name">Appointment Date</label>
+              <input
+                id="full-name"
+                type="date"
+                placeholder="John Smith"
+                required
+              />
+            </div>
+            <div>
+              <label for="full-name">Phone Number</label>
+              <input
+                id="full-name"
+                type="text"
+                placeholder="ETH +251"
+                required
+              />
+            </div>
+            <!-- <div>
+              <label for="message">Message</label>
+              <textarea name="" id="message" rows="3"></textarea>
+            </div> -->
+            <button class="btn btn-form">Book</button>
+          </form>
         </div>
       </section>
 
