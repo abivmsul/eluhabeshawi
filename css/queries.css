@@ -1,3 +1,9 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
 @media (max-width: 84em) {
   /* .hero {
     max-width: 50rem;
@@ -11,3 +17,149 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/**************************/
+/* BELOW 1168px (Smaller desktops) */
+
+@media (max-width: 73em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+  .service-description {
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+  .service-grid {
+    column-gap: 1.5rem;
+    row-gap: 3rem;
+  }
+  .main-nav-list {
+    gap: 1.8rem;
+  }
+
+  .secondary-heading {
+    font-size: 4.4rem;
+  }
+  .sub-heading {
+    font-size: 2rem;
+  }
+  .service-section .secondary-heading::before,
+  .gallery-section .secondary-heading::before,
+  .testimonial-section .secondary-heading::before,
+  .price-section .secondary-heading::before,
+  .contact-section .secondary-heading::before {
+    font-size: 7.4rem;
+  }
+  .testimonials {
+    column-gap: 3rem;
+  }
+}
+
+/**************************/
+/* BELOW 983px (Smaller desktops) */
+
+@media (max-width: 62em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .grid {
+    column-gap: 3rem;
+    row-gap: 3rem;
+  }
+  .card {
+    margin: 1.5rem;
+  }
+  .price-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+  }
+  .price-grid {
+    background-image: url(../img/powder2.png);
+    background-size: contain;
+    background-position: right;
+  }
+  .price-grid img {
+    display: none;
+  }
+  .price-detail {
+    background-color: #ece2e0;
+    /* color: #ffffff; */
+  }
+
+  .grid-col-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-us {
+    justify-content: center;
+  }
+  .contact-form button {
+    grid-column: 1/-1;
+    justify-self: center;
+    width: 25%;
+  }
+  .c-form {
+    grid-column: 1/-1;
+    align-items: center;
+  }
+  .textbox {
+    grid-column: 1/-1;
+    align-items: center;
+    order: -1;
+  }
+  .contact-info {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact {
+    justify-content: center;
+  }
+}
+
+/**************************/
+/* BELOW 785px (Smaller desktops) */
+
+@media (max-width: 49em) {
+  .service-grid,
+  .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+    /* 1140px */
+    max-width: 86rem;
+  }
+
+  .card.no-shadow:last-child {
+    display: none;
+  }
+  .flex--footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+  .logo-col {
+    grid-column: 1/-1;
+    order: 1;
+  }
+  .nav-col,
+  .address-col {
+    justify-self: center;
+  }
+}
+
+/**************************/
+/* BELOW 580px (Phone) */
+@media (max-width: 36em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+}
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/

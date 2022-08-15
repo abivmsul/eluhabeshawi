@@ -159,6 +159,12 @@
 .txt-center {
   text-align: center;
 }
+.service-grid{
+  display: grid;
+  grid-template-columns: repeat(3 ,1fr);
+  column-gap: 3rem;
+  row-gap: 6rem;
+}
 
 .card {
   justify-self: center;
@@ -249,6 +255,7 @@
 /**************************/
 
 .testimonial-section {
+  background-color: #f5f1f0;
   padding: 9.6rem 0;
 }
 .testimonials {
@@ -306,9 +313,10 @@
 /**************************/
 /* Pricing section */
 /**************************/
-
+ 
 .price-section {
   padding: 9.6rem 0;
+
 }
 
 .price-section .secondary-heading::before {
@@ -323,7 +331,7 @@
   column-gap: 0;
 }
 .price-detail.vip {
-  background-color: #9e6e66;
+  background-color: #bb9a94;
   color: #ffffff;
 }
 .price-detail {
@@ -331,7 +339,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  background-color: rgba(250, 235, 215, 0.39);
+  background-color: #ece2e0;
   padding: 2rem;
 }
 .price-info {
@@ -424,6 +432,7 @@
   grid-column: -3/-1;
   background-color: #9e6e66;
   height: 35rem;
+  margin-top: 6rem;
 }
 .c-form {
   padding: 2rem;
@@ -486,6 +495,7 @@
 /**************************/
 
 .footer {
+  
   border-top: 1px solid #eee;
   padding: 9.6rem 0;
 }
