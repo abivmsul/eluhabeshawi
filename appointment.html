@@ -78,7 +78,7 @@
               <input
                 id="full-name"
                 type="text"
-                placeholder="John Smith"
+                placeholder="Your name here"
                 required
               />
             </div>
@@ -106,13 +106,8 @@
             </div>
 
             <div>
-              <label for="full-name">Appointment Date</label>
-              <input
-                id="full-name"
-                type="date"
-                placeholder="John Smith"
-                required
-              />
+              <label for="date_picker">Appointment Date</label>
+              <input id="date_picker" type="date" required />
             </div>
             <div>
               <label for="full-name">Phone Number</label>
@@ -271,5 +266,20 @@
         </div>
       </div>
     </footer>
+    <script>
+      var todayDate = new Date();
+      var month = todayDate.getMonth() + 1;
+      var year = todayDate.getUTCFullYear() - 0;
+      var tdate = todayDate.getDate();
+      if (month < 10) {
+        month = "0" + month;
+      }
+      if (tdate < 10) {
+        tdate = "0" + tdate;
+      }
+      var maxDate = year + "-" + month + "-" + tdate;
+      document.getElementById("date_picker").setAttribute("min", maxDate);
+      console.log(maxDate);
+    </script>
   </body>
 </html>
