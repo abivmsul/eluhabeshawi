@@ -415,7 +415,7 @@
 }
 
 .contact-section .secondary-heading::before {
-  content: "Our Location";
+  content: "Location";
   position: absolute;
   top: -60%;
   right: 32%;
@@ -488,8 +488,9 @@
 .appointment-form button {
   grid-column: 1/-1;
   justify-self: center;
-  max-width: 20%;
-  margin: 2rem;
+  padding: 1rem 4rem;
+  max-width: 50%;
+  /* margin: 2rem; */
 }
 
 .contact-form label,
@@ -514,6 +515,7 @@
   border: none;
   /* background-color: #fdf2e9; */
   border-radius: 9px;
+  margin-bottom: 2rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 .contact-form :nth-child(3),

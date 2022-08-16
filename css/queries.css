@@ -204,6 +204,28 @@
     max-width: 86rem;
   }
 
+  .service-section .secondary-heading::before,
+  .gallery-section .secondary-heading::before,
+  .testimonial-section .secondary-heading::before,
+  .price-section .secondary-heading::before,
+  .contact-section .secondary-heading::before {
+    font-size: 6.4rem;
+  }
+
+  .service-section .secondary-heading::before {
+    top: -50%;
+    right: 29%;
+  }
+  
+  .testimonial-section .secondary-heading::before {
+    top: -50%;
+    right: 32%;
+  }
+
+  .contact-section .secondary-heading::before {
+    top: -60%;
+    right: 38%;
+  }
   .card.no-shadow:last-child {
     display: none;
   }
@@ -225,6 +247,28 @@
 /**************************/
 /* BELOW 580px (Phone) */
 @media (max-width: 36em) {
+
+  
+  .service-section .secondary-heading::before {
+    top: -28%;
+    right: 20%;
+  }
+  .gallery-section .secondary-heading::before {
+    right: 22%;
+  }
+  .testimonial-section .secondary-heading::before {
+    top: -50%;
+    right: 20%;
+  }
+  .price-section .secondary-heading::before {
+    top: -50%;
+    right: 32%;
+  }
+
+  .contact-section .secondary-heading::before {
+    top: -60%;
+    right: 30%;
+  }
   .hero {
     justify-content: start;
     margin: 0 6rem;
