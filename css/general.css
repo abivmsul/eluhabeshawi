@@ -23,7 +23,7 @@ body {
   color: #283034; */
   color: #5f5842;
 }
-.container { 
+.container {
   /* 1140px */
   max-width: 120rem;
   padding: 0 3.2rem;
@@ -131,7 +131,6 @@ body {
 .testimonial-section .secondary-heading::before,
 .price-section .secondary-heading::before,
 .contact-section .secondary-heading::before {
-  
   font-family: "La Belle Aurore", cursive;
   color: #9e6e66;
   font-weight: 200;
@@ -144,11 +143,12 @@ body {
 .btn-form {
   background-color: #9e6e66;
   color: #fdf2e9;
- 
+
   padding: 1.2rem;
 }
 
 .btn-form:hover {
-  background-color: #fff;
-  color: #555;
+  background: transparent;
+  box-shadow: inset 0 0 0 1px #9e6e66;
+  color: #9e6e66;
 }

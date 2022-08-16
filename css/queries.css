@@ -29,6 +29,7 @@
   .service-description {
     font-size: 1.4rem;
     line-height: 1.5;
+    width: 100%;
   }
   .service-grid {
     column-gap: 1.5rem;
@@ -65,7 +66,7 @@
     font-size: 50%;
   }
 
-  .hero{
+  .hero {
     justify-content: start;
     margin: 0 10rem;
   }
@@ -103,7 +104,7 @@
   .contact-form button {
     grid-column: 1/-1;
     justify-self: center;
-    width: 25%;
+    max-width: 25%;
   }
   .c-form {
     grid-column: 1/-1;
@@ -121,8 +122,6 @@
     justify-content: center;
   }
 
-
-  
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
     display: block;
@@ -189,11 +188,11 @@
 /* BELOW 785px (Smaller desktops) */
 
 @media (max-width: 49em) {
-  .hero{
+  .hero {
     justify-content: start;
     margin: 0 9rem;
   }
- /* .hero-text{
+  /* .hero-text{
   max-width: 100%;
  } */
   .service-grid,
@@ -226,16 +225,16 @@
 /**************************/
 /* BELOW 580px (Phone) */
 @media (max-width: 36em) {
-  .hero{
+  .hero {
     justify-content: start;
     margin: 0 6rem;
   }
- .hero-text{
-  max-width: 100%;
- }
- .primary-heading {
-  margin-bottom: 0rem;
-}
+  .hero-text {
+    max-width: 100%;
+  }
+  .primary-heading {
+    margin-bottom: 0rem;
+  }
   .grid {
     row-gap: 4.8rem;
   }
@@ -265,11 +264,11 @@
     gap: 2rem;
   }
   .container {
-    max-width: 60rem;
+    max-width: 53rem;
   }
   .container-2 {
     /* 1140px */
-    max-width: 48rem;
+    max-width: 58rem;
   }
 
   .contact-form,

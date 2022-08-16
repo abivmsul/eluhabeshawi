@@ -47,7 +47,7 @@
           <li><a href="#prices" class="main-nav-link">Price</a></li>
           <li><a href="#contactus" class="main-nav-link">Contact Us</a></li>
           <li>
-            <a href="#" class="main-nav-link nav-call"
+            <a href="tel:+2519220272" class="main-nav-link nav-call"
               ><div>
                 <ion-icon name="call-outline" class="nav-icon"></ion-icon>
               </div>
@@ -73,7 +73,7 @@
               that you’ll be looking and feeling your best after we’ve worked
               our magic.
             </p>
-            <a href="appointment.html" class="btn btn-primary">Book Now</a>
+            <a href="#appointment" class="btn btn-primary">Book Now</a>
           </div>
         </div>
       </section>
@@ -224,7 +224,6 @@
               </blockquote>
             </div>
           </div>
-          
 
           <div class="card no-shadow">
             <div class="testimonial-img-box">
@@ -398,6 +397,66 @@
               <hr class="divider" />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="appointment-section" id="appointment">
+        <div class="container">
+          <h1 class="secondary-heading txt-center">Make an Appointmemt</h1>
+        </div>
+        <div class="container-2">
+          <form action="#" class="appointment-form">
+            <div>
+              <label for="full-name">Full Name</label>
+              <input
+                id="full-name"
+                type="text"
+                placeholder="Your name here"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email">Email address</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="me@example.com"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="service">Service</label>
+              <select id="service" name="service" required>
+                <option value="">--- Select service ---</option>
+                <option value="friends">Makeup</option>
+                <option value="youtube">Henna</option>
+                <option value="podcast">Wax</option>
+                <option value="ad">Eyebrow-Henna</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="date_picker">Appointment Date</label>
+              <input id="date_picker" type="date" required />
+            </div>
+            <div>
+              <label for="full-name">Phone Number</label>
+              <input
+                id="full-name"
+                type="text"
+                placeholder="ETH +251"
+                required
+              />
+            </div>
+            <!-- <div>
+              <label for="message">Message</label>
+              <textarea name="" id="message" rows="3"></textarea>
+            </div> -->
+            <button class="btn btn-form">Book</button>
+          </form>
         </div>
       </section>
 

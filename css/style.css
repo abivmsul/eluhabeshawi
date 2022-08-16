@@ -104,7 +104,7 @@
   height: 8rem;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: rgba(255, 255, 255, 0.97);
+  background-color: #b7948e9f;
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
@@ -112,7 +112,6 @@
 .sticky .section-hero {
   margin-top: 9.6rem;
 }
-
 
 /*
 /**************************/
@@ -151,7 +150,7 @@
   height: 100vh;
 }
 .hero-text {
-  padding-top: 15rem;
+  padding-top: 8rem;
   max-width: 75%;
 }
 .primary-heading {
@@ -197,9 +196,9 @@
 .txt-center {
   text-align: center;
 }
-.service-grid{
+.service-grid {
   display: grid;
-  grid-template-columns: repeat(3 ,1fr);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 3rem;
   row-gap: 6rem;
 }
@@ -258,6 +257,7 @@
   font-weight: 300;
   margin-bottom: 1.5rem;
   text-align: center;
+  max-width: 75%;
 }
 
 /**************************/
@@ -351,10 +351,9 @@
 /**************************/
 /* Pricing section */
 /**************************/
- 
+
 .price-section {
   padding: 9.6rem 0;
-
 }
 
 .price-section .secondary-heading::before {
@@ -480,8 +479,17 @@
 .appointment-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 3.2rem;
+  column-gap: 4rem;
   row-gap: 2.4rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  padding: 2rem;
+}
+.contact-form button,
+.appointment-form button {
+  grid-column: 1/-1;
+  justify-self: center;
+  max-width: 20%;
+  margin: 2rem;
 }
 
 .contact-form label,
@@ -490,6 +498,7 @@
   font-size: 1.4rem;
   font-weight: 200;
   margin-bottom: 1.2rem;
+  color: #9e6e66;
 }
 
 .contact-form input,
@@ -514,6 +523,7 @@
 .contact-form .btn-form,
 .appointment-form .btn-form {
   max-width: 50%;
+  align-self: center;
 }
 .contact-form input::placeholder,
 .appointment-form input::placeholder {
@@ -533,7 +543,6 @@
 /**************************/
 
 .footer {
-  
   border-top: 1px solid #eee;
   padding: 9.6rem 0;
 }
