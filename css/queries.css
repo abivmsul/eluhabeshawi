@@ -324,6 +324,43 @@
     max-width: 100%;
   }
 }
+
+/**************************/
+/* BELOW 400px (Phone) */
+@media (max-width: 25em) {
+  .secondary-heading {
+    font-size: 4rem;
+  }
+  
+  .service-section .secondary-heading::before,
+  .gallery-section .secondary-heading::before,
+  .testimonial-section .secondary-heading::before,
+  .price-section .secondary-heading::before,
+  .contact-section .secondary-heading::before {
+    font-size: 4.5rem;
+  }
+  .service-section .secondary-heading::before {
+    top: -28%;
+    right: 20%;
+  }
+  .gallery-section .secondary-heading::before {
+    right: 22%;
+  }
+  .testimonial-section .secondary-heading::before {
+    top: -50%;
+    right: 20%;
+  }
+  .price-section .secondary-heading::before {
+    top: -50%;
+    right: 32%;
+  }
+
+  .contact-section .secondary-heading::before {
+    top: -60%;
+    right: 30%;
+  }
+
+}
 /* 
 - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
